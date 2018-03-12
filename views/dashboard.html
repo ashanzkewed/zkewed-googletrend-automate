@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zkewed-Google Trend Automate</title>
+    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/dashboard.css">
+    <link rel="stylesheet" href="../public/css/semantic.min.css">
+    <link rel="stylesheet" href="../public/css/dataTables.semanticui.min.css">
+
+
+
+</head>
+<body>
+
+
+<!--1row start-->
+<div class="row head">
+    <div class="col-md-2 col-sm-1"></div>
+
+    <div class="col-md-3 col-sm-4">
+        <label>Country</label>
+        <select class="form-control" id="countryCombo">
+        </select>
+    </div>
+
+    <div class="col-md-2 col-sm-2" ></div>
+    <div class="col-md-3 col-sm-4">
+        <label>Timeline</label>
+        <select class="form-control" id="timeRangeCombo" >
+            <option>Last Week</option>
+            <option>Last Month</option>
+            <option>Last 3 Month</option>
+            <option>Last 6 Month</option>
+            <option>Last 12 Month</option>
+            <option>Last 3 years</option>
+        </select>
+    </div>
+    <div class="col-md-1 col-sm-1"></div>
+</div>
+<!--1row end-->
+
+<!--2row start-->
+<div class="row head">
+    <div class="col-md-2 col-sm-1"></div>
+
+    <div class="col-md-3 col-sm-4">
+        <label>Brand</label>
+        <div id="sa">
+            <input class="typeahead form-control" type="text" placeholder="input search brand..." id="brandText">
+        </div>
+    </div>
+    <div class="col-md-2 col-sm-1"></div>
+    <div class="col-md-3 col-sm-4"></div>
+    <div class="col-md-2 col-sm-2"></div>
+</div>
+<!--2row end-->
+
+<!--2row start-->
+<div class="row head">
+    <div class="col-md-2 col-sm-1"></div>
+
+    <div class="col-md-3 col-sm-4 form">
+        <button class="btn btn-primary" id="addBtn">Submit Data</button>
+    </div>
+    <div class="col-md-2 col-sm-1"></div>
+    <div class="col-md-3 col-sm-4"></div>
+    <div class="col-md-2 col-sm-2"></div>
+</div>
+<!--2row end-->
+
+
+<!--3row start-->
+<div class="row table-head">
+    <div class="col-md-1 col-sm-1"></div>
+    <div class="col-md-10 col-sm-10" style="padding-right:0px!important; padding-left:27px!important;">
+        <table id="example" class="ui celled table" cellspacing="0" width="110%">
+            <thead>
+            <tr>
+                <th width="50%">Brand</th>
+                <th width="20%">Country</th>
+                <th width="20%">Timeline</th>
+                <th width="10%">Action</th>
+            </tr>
+            </thead>
+            <tbody class="t-body">
+
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-1 col-sm-1"></div>
+</div>
+<!--3row end-->
+<script>
+    window.nodeRequire = require;
+    delete window.require;
+    delete window.exports;
+    delete window.module;
+</script>
+<script src="../public/js/jquery-3.3.1.min.js"></script>
+<script src="../public/js/jquery.dataTables.min.js"></script>
+<script src="../public/js/dataTables.semanticui.min.js"></script>
+<script src="../public/js/semantic.min.js"></script>
+<script src="../public/js/dashboard.js"></script>
+<script src="../public/js/bootstrap.min.js"></script>
+<script src="../public/js/sweetalert.min.js"></script>
+<script src="../public/js/date.js"></script>
+
+
+</body>
+</html>

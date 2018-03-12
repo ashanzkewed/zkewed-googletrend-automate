@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zkewed-Google Trend Automate</title>
+    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/log.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card card-container">
+
+        <img id="profile-img" class="profile-img-card" src="../public/img/Zkewed%20Logo.png" />
+        <p id="profile-name" class="profile-name-card"></p>
+        <form class="form-signin">
+            <span id="reauth-email" class="reauth-email"></span>
+
+            <div class="form-group">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+            </div>
+
+            <div class="form-group">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            </div>
+
+
+
+            <button class="btn btn-lg btn-primary btn-block btn-signin" id="signInbtn" type="submit">Sign in</button>
+        </form><!-- /form -->
+        <a href="#" class="forgot-password">
+            Forgot the password?
+        </a>
+    </div><!-- /card-container -->
+</div><!-- /container -->
+
+<script>
+    window.$ = window.jquery = require('../public/js/jquery-3.3.1.min');
+   require('../public/js/index');
+
+</script>
+
+</body>
+</html>
